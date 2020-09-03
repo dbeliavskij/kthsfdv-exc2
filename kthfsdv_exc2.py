@@ -50,6 +50,7 @@ class Function:
     def time_plot(self, t=np.array(np.linspace(0, 2, 100))):
         self.t = t
         h = self.update(self.t)
+        print('Press Ctrl+C to stop real time plotting')
         plt.bone()
         plt.plot(self.t, h, color='green')
         try:
